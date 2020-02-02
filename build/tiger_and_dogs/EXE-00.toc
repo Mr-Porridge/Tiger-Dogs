@@ -2,7 +2,7 @@
  True,
  False,
  False,
- 'favicon.ico',
+ 'favicon_2.ico',
  None,
  False,
  False,
@@ -36,26 +36,26 @@
   ('tiger_and_dogs',
    'D:\\porridge\\playground\\TigerDogs\\tiger_and_dogs.py',
    'PYSOURCE'),
-  ('api-ms-win-crt-runtime-l1-1-0.dll',
+  ('api-ms-win-crt-math-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-math-l1-1-0.dll',
    'BINARY'),
-  ('VCRUNTIME140.dll',
-   'D:\\porridge\\venv\\Scripts\\VCRUNTIME140.dll',
-   'BINARY'),
+  ('python36.dll', 'D:\\porridge\\venv\\Scripts\\python36.dll', 'BINARY'),
   ('api-ms-win-crt-stdio-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-stdio-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-math-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-math-l1-1-0.dll',
+  ('VCRUNTIME140.dll',
+   'D:\\porridge\\venv\\Scripts\\VCRUNTIME140.dll',
    'BINARY'),
   ('api-ms-win-crt-heap-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-heap-l1-1-0.dll',
    'BINARY'),
-  ('python36.dll', 'D:\\porridge\\venv\\Scripts\\python36.dll', 'BINARY'),
+  ('api-ms-win-crt-runtime-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-runtime-l1-1-0.dll',
+   'BINARY'),
   ('api-ms-win-crt-locale-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-locale-l1-1-0.dll',
@@ -63,25 +63,21 @@
   ('ucrtbase.dll',
    'C:\\Program Files (x86)\\Java\\jdk1.8.0_211\\jre\\bin\\ucrtbase.dll',
    'BINARY'),
-  ('api-ms-win-crt-convert-l1-1-0.dll',
+  ('api-ms-win-crt-time-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-time-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-string-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-string-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-crt-time-l1-1-0.dll',
+  ('api-ms-win-crt-convert-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-time-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-convert-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-environment-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-environment-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-crt-process-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-process-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-crt-filesystem-l1-1-0.dll',
    'C:\\Program Files '
@@ -91,69 +87,21 @@
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-conio-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-profile-l1-1-0.dll',
+  ('api-ms-win-crt-process-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-profile-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-memory-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-process-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-sysinfo-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-sysinfo-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-util-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-util-l1-1-0.dll',
-   'BINARY'),
   ('api-ms-win-core-synch-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-synch-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-synch-l1-2-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-synch-l1-2-0.dll',
-   'BINARY'),
   ('api-ms-win-core-datetime-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-datetime-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-processthreads-l1-1-1.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
-   'BINARY'),
-  ('api-ms-win-core-libraryloader-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-localization-l1-2-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-localization-l1-2-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-errorhandling-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-namedpipe-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-heap-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-heap-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
-   'BINARY'),
-  ('api-ms-win-core-file-l2-1-0.dll',
-   'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-file-l2-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-file-l1-1-0.dll',
    'C:\\Program Files '
@@ -163,33 +111,85 @@
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-file-l1-2-0.dll',
    'BINARY'),
-  ('api-ms-win-core-console-l1-1-0.dll',
+  ('api-ms-win-core-memory-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-memory-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-rtlsupport-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-errorhandling-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-errorhandling-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-synch-l1-2-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-synch-l1-2-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-handle-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-handle-l1-1-0.dll',
    'BINARY'),
   ('api-ms-win-core-string-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-string-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-debug-l1-1-0.dll',
+  ('api-ms-win-core-file-l2-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-file-l2-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-processenvironment-l1-1-0.dll',
+  ('api-ms-win-core-util-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-util-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-console-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-console-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-localization-l1-2-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-localization-l1-2-0.dll',
    'BINARY'),
   ('api-ms-win-core-timezone-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-timezone-l1-1-0.dll',
    'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-processthreads-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-heap-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-heap-l1-1-0.dll',
+   'BINARY'),
   ('api-ms-win-core-interlocked-l1-1-0.dll',
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-interlocked-l1-1-0.dll',
    'BINARY'),
-  ('api-ms-win-core-handle-l1-1-0.dll',
+  ('api-ms-win-core-processenvironment-l1-1-0.dll',
    'C:\\Program Files '
-   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-handle-l1-1-0.dll',
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-processenvironment-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-profile-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-profile-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-debug-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-debug-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-namedpipe-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-namedpipe-l1-1-0.dll',
+   'BINARY'),
+  ('api-ms-win-core-processthreads-l1-1-1.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-processthreads-l1-1-1.dll',
+   'BINARY'),
+  ('api-ms-win-core-libraryloader-l1-1-0.dll',
+   'C:\\Program Files '
+   '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-core-libraryloader-l1-1-0.dll',
    'BINARY'),
   ('libopenblas.PYQHXLVVQ7VESDPUVUADXEVJOBGHJPAY.gfortran-win_amd64.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\numpy\\.libs\\libopenblas.PYQHXLVVQ7VESDPUVUADXEVJOBGHJPAY.gfortran-win_amd64.dll',
@@ -349,17 +349,17 @@
    'C:\\Program Files '
    '(x86)\\Java\\jdk1.8.0_211\\jre\\bin\\api-ms-win-crt-utility-l1-1-0.dll',
    'BINARY'),
-  ('SDL.dll',
-   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\SDL.dll',
-   'BINARY'),
-  ('libpng16-16.dll',
-   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libpng16-16.dll',
-   'BINARY'),
   ('libjpeg-8.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libjpeg-8.dll',
    'BINARY'),
   ('SDL_image.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\pygame\\SDL_image.dll',
+   'BINARY'),
+  ('SDL.dll',
+   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\SDL.dll',
+   'BINARY'),
+  ('libpng16-16.dll',
+   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libpng16-16.dll',
    'BINARY'),
   ('SDL_mixer.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\pygame\\SDL_mixer.dll',
@@ -370,14 +370,14 @@
   ('libfreetype-6.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libfreetype-6.dll',
    'BINARY'),
-  ('zlib1.dll',
-   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\zlib1.dll',
+  ('libtiff-5.dll',
+   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libtiff-5.dll',
    'BINARY'),
   ('libwebp-5.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libwebp-5.dll',
    'BINARY'),
-  ('libtiff-5.dll',
-   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libtiff-5.dll',
+  ('zlib1.dll',
+   'D:\\porridge\\venv\\lib\\site-packages\\pygame\\zlib1.dll',
    'BINARY'),
   ('libmpg123-0.dll',
    'D:\\porridge\\venv\\lib\\site-packages\\pygame\\libmpg123-0.dll',
@@ -394,85 +394,85 @@
   ('base_library.zip',
    'D:\\porridge\\playground\\TigerDogs\\build\\tiger_and_dogs\\base_library.zip',
    'DATA'),
-  ('lib2to3\\PatternGrammar3.6.2.candidate.2.pickle',
+  ('lib2to3\\tests\\data\\README',
    'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.2.candidate.2.pickle',
-   'DATA'),
-  ('lib2to3\\Grammar3.6.4.final.0.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.4.final.0.pickle',
-   'DATA'),
-  ('lib2to3\\PatternGrammar3.6.3.candidate.1.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.3.candidate.1.pickle',
-   'DATA'),
-  ('lib2to3\\Grammar3.6.3.candidate.1.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.3.candidate.1.pickle',
-   'DATA'),
-  ('lib2to3\\Grammar3.6.2.candidate.2.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.2.candidate.2.pickle',
-   'DATA'),
-  ('lib2to3\\Grammar.txt',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar.txt',
-   'DATA'),
-  ('Include\\pyconfig.h',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\Include\\pyconfig.h',
-   'DATA'),
-  ('lib2to3\\PatternGrammar3.6.5.final.0.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.5.final.0.pickle',
-   'DATA'),
-  ('lib2to3\\PatternGrammar3.6.4.final.0.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.4.final.0.pickle',
-   'DATA'),
-  ('lib2to3\\Grammar3.6.2.final.0.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.2.final.0.pickle',
-   'DATA'),
-  ('lib2to3\\PatternGrammar.txt',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar.txt',
-   'DATA'),
-  ('lib2to3\\PatternGrammar3.6.2.final.0.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.2.final.0.pickle',
-   'DATA'),
-  ('lib2to3\\PatternGrammar3.6.5.candidate.1.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.5.candidate.1.pickle',
-   'DATA'),
-  ('lib2to3\\Grammar3.6.5.candidate.1.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.5.candidate.1.pickle',
-   'DATA'),
-  ('lib2to3\\PatternGrammar3.6.3.final.0.pickle',
-   'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.3.final.0.pickle',
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\tests\\data\\README',
    'DATA'),
   ('lib2to3\\Grammar3.6.4.candidate.1.pickle',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.4.candidate.1.pickle',
    'DATA'),
-  ('lib2to3\\Grammar3.6.3.final.0.pickle',
+  ('lib2to3\\Grammar3.6.3.candidate.1.pickle',
    'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.3.final.0.pickle',
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.3.candidate.1.pickle',
    'DATA'),
-  ('lib2to3\\tests\\data\\README',
+  ('lib2to3\\PatternGrammar3.6.5.final.0.pickle',
    'C:\\Program Files (x86)\\Microsoft Visual '
-   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\tests\\data\\README',
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.5.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.3.final.0.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.3.final.0.pickle',
    'DATA'),
   ('lib2to3\\Grammar3.6.5.final.0.pickle',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.5.final.0.pickle',
    'DATA'),
+  ('Include\\pyconfig.h',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\Include\\pyconfig.h',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.5.candidate.1.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.5.candidate.1.pickle',
+   'DATA'),
+  ('lib2to3\\Grammar.txt',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar.txt',
+   'DATA'),
   ('lib2to3\\PatternGrammar3.6.4.candidate.1.pickle',
    'C:\\Program Files (x86)\\Microsoft Visual '
    'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.4.candidate.1.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.3.candidate.1.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.3.candidate.1.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar.txt',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar.txt',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.2.candidate.2.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.2.candidate.2.pickle',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.2.final.0.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.2.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.2.final.0.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.2.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.5.candidate.1.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.5.candidate.1.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.4.final.0.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.4.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\PatternGrammar3.6.2.candidate.2.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\PatternGrammar3.6.2.candidate.2.pickle',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.3.final.0.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.3.final.0.pickle',
+   'DATA'),
+  ('lib2to3\\Grammar3.6.4.final.0.pickle',
+   'C:\\Program Files (x86)\\Microsoft Visual '
+   'Studio\\Shared\\Python36_64\\lib\\lib2to3\\Grammar3.6.4.final.0.pickle',
    'DATA'),
   ('PyInstaller\\utils\\hooks\\subproc\\README',
    'd:\\porridge\\venv\\lib\\site-packages\\pyinstaller-4.0.dev0+70ce5c5f49-py3.6.egg\\PyInstaller\\utils\\hooks\\subproc\\README',
@@ -559,7 +559,7 @@
  [],
  False,
  False,
- 1580625445,
+ 1580629002,
  [('run.exe',
    'D:\\porridge\\venv\\lib\\site-packages\\pyinstaller-4.0.dev0+70ce5c5f49-py3.6.egg\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])

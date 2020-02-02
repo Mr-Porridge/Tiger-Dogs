@@ -178,8 +178,7 @@ class ChessBoard:
             # print("Tiger cannot move! Dogs win!", self.path[user_input[-2][1]])
             os.system("cls")
             print("Tiger cannot move! Dogs win!")
-            print("You can restart the game or continue playing with chess board for fun!")
-            print("\nThanks for playing with me!")
+            end_game()
             return dogs_win
         # tiger's turn
         if not f:
@@ -187,8 +186,7 @@ class ChessBoard:
             if self.board[2].chess == 2:
                 os.system("cls")
                 print("Tiger in trap! Dogs win!")
-                print("You can restart the game or continue playing with chess board for fun!")
-                print("\nThanks for playing with me!")
+                end_game()
                 return self.board[2].chess == 2
             # total dogs number <= 2 -> tiger wins
             sum_all = 0
@@ -197,8 +195,7 @@ class ChessBoard:
             if sum_all <= -2:
                 os.system("cls")
                 print("Tiger wins!")
-                print("You can restart the game or continue playing with chess board for fun!")
-                print("\nThanks for playing with me!")
+                end_game()
                 return tiger_wins
 
     def regret_init(self):
@@ -356,6 +353,15 @@ def update_chessboard(cs: ChessBoard):
     screen.blit(st_img, (st_x, st_y))
     screen.blit(re_img, (re_x, re_y))
     screen.blit(q_img, (q_x, q_y))
+
+
+def end_game():
+    print("You can restart the game or continue playing with chess board for fun!\n")
+    print("Thanks for playing with me!\n")
+    print("Please give me star if you can! Thanks!")
+    print("Here's the link to star. https://github.com/Mr-Porridge/Tiger-Dogs")
+    print("Thanks for playing!")
+    print("Here the thanks from Xiao Qi! http://47.110.134.247/thanks.gif")
 
 
 # Preparations
