@@ -19,3 +19,8 @@ Here's the Java version https://github.com/Mr-Porridge/Tiger-and-dogs
 (1)Download windows.rar   
 (2)Decompression  
 (3)Double click tiger_and_dogs.exe 
+
+## Rules
+![image](http://47.110.134.247/numbers/rules1.jpg)
+![image](http://47.110.134.247/numbers/rules2.jpg)
+![image](http://47.110.134.247/numbers/rules3.jpg)
