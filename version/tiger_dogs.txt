@@ -1,0 +1,334 @@
+import copy
+# 捕虎棋
+"""
+一款传统的中国智力棋类游戏
+曾在 Java 程序设计时开发过一个版本
+现以 Python3 重构 拟搭建线上网页版平台
+开发日期： 2019.11.24
+"""
+
+"""
+前端返回参数：
+点的名称（序号）
+移动方向
+"""
+
+
+# 棋盘 采用无向图作为数据结构
+class ChessBoardPoint:
+    # (x,y) represent position ; chess represent what is on the point
+    # chess: 0 -> empty  1 -> dog  2 -> tiger  -1 -> does not exist
+    def __init__(self, x: int = 0, y: int = 0, chess: int = 0):
+        self.x = x
+        self.y = y
+        self.chess = chess
+
+    def show_point(self):
+        # print("x = ", self.x, end=" ")
+        # print("y = ", self.y, end=" ")
+        # print("The point is: ", self.chess)
+        return "x =  %d y =  %d The point is:  %d" % (self.x, self.y, self.chess)
+
+    def set_point(self, info: tuple):
+        self.x, self.y, self.chess = info[0], info[1], info[2]
+
+
+class ChessBoard:
+    def __init__(self, total_row: int = 7, total_line: int = 5):
+        self.board = {}
+        self.row = total_row
+        self.line = total_line
+        self.path = None
+        self.step = []
+        # generate chess board
+        for row in range(self.row):
+            for line in range(self.line):
+                # point's position(x,y) can name point as well
+                point_name = row * self.line + line
+                self.board[point_name] = ChessBoardPoint(line, row, 0)
+
+    def print(self):
+        for key in self.board.keys():
+            print(key, " -> ", self.board[key].show_point())
+
+    def show_chess_board(self):
+        for key in self.board.keys():
+            if self.board[key].chess != -1:
+                # information : (x, y, chess)
+                # print((self.board[key].x, self.board[key].y, self.board[key].chess), end=" ")
+                # information : (chess) only
+                print(self.board[key].chess, end=" ")
+            else:
+                # information : (x, y, chess)
+                # print("         ", end=" ")
+                # information : (chess) only
+                print(" ", end=" ")
+            if (key - 4) % 5 == 0:
+                print()
+        print("-------------------------------")
+
+    def set_path(self):
+        self.path = creat_path_graph(self)
+
+    def set_chess_board(self):
+        new_game = {
+            # empty point
+            (0, 0, -1), (1, 0, -1), (3, 0, -1), (4, 0, -1), (0, 1, -1), (4, 1, -1),
+            # dogs
+            (0, 2, 1), (1, 2, 1), (2, 2, 1), (3, 2, 1), (4, 2, 1),
+            (0, 3, 1), (0, 4, 1), (0, 5, 1),
+            (4, 3, 1), (4, 4, 1), (4, 5, 1),
+            (0, 6, 1), (1, 6, 1), (2, 6, 1), (3, 6, 1), (4, 6, 1),
+            # tiger
+            (2, 4, 2)
+        }
+        for info in new_game:
+            self.board[info[1] * self.line + info[0]].chess = info[2]
+
+    def swap(self, point1: int, point2: int):
+        # point1 & point2 is the point's name -> key in the dictionary
+        # first : check the point is empty or not
+        if (self.board[point1].chess != 0) & (self.board[point2].chess == 0):
+            # check path
+            if point2 in self.path[point1]:
+                self.board[point1].chess, self.board[point2].chess = self.board[point2].chess, self.board[point1].chess
+            else:
+                print("Path does not exist.", self.path[point1])
+                return False
+        else:
+            print("Cannot execute the swap.")
+            print("The point is empty or target point is not empty.")
+            return False
+        # print chessboard
+        self.show_chess_board()
+        return True
+
+    def eat(self, tiger: int, turn: bool):
+        if not turn:
+            surr = []
+            # surroundings = self.path[tiger]  # 引用 导致删除原路径
+            for dire in self.path[tiger]:
+                surr.append(dire)
+            print(surr)
+            while len(surr) > 0:
+                if (surr[0] == -1) or (surr[-1] == -1):
+                    print("Path does not exist.")
+                    del surr[0], surr[-1]
+                else:
+                    if self.board[surr[0]].chess == self.board[surr[-1]].chess == 1:
+                        print("Eat", surr[0], surr[-1])
+                        self.board[surr[0]].chess, self.board[surr[-1]].chess = 0, 0
+                        chess_board.show_chess_board()
+                        del surr[0], surr[-1]
+                    else:
+                        print("Cannot eat", surr[0], surr[-1])
+                        del surr[0], surr[-1]
+
+    def save(self):
+        temp = copy.deepcopy(self)
+        self.step.append(temp)
+        # Here address is saved not the object
+        # so when chessboard changed all saved things change
+        # and all of them are the same
+        # so use deepcopy
+        # test:
+        # for i in range(len(self.step)):
+        # print("The %d-th step is:" % i)
+        # self.step[i].show_chess_board()
+
+    def win(self, f: bool):
+        dogs_win = True
+        tiger_wins = True
+        # dog's turn
+        if f & (len(user_input) >= 2):
+            for point in self.path[user_input[-2][1]]:
+                # tiger can move -> game continues
+                print("Checking point", user_input[-2][1], point)
+                if point != -1:
+                    if self.board[point].chess == 0:
+                        print("Game continues!")
+                        return bool(1 - dogs_win)
+            # tiger cannot move -> dogs win
+            print("Tiger cannot move! Dogs win!", self.path[user_input[-2][1]])
+            return dogs_win
+        # tiger's turn
+        if not f:
+            # tiger in trap -> dogs win
+            if self.board[2].chess == 2:
+                print("Tiger in trap! Dogs win!")
+                return self.board[2].chess == 2
+            # total dogs number <= 2 -> tiger wins
+            sum_all = 0
+            for point in self.board.values():
+                sum_all += point.chess
+            if sum_all <= -2:
+                print("Tiger wins!")
+                return tiger_wins
+
+
+# get user's movement
+def get_movement() -> tuple:
+    # Eight directions are written below
+    # q w e
+    # a   d
+    # z x c
+    movement = input("Please input direction: ")
+    if movement == "q":
+        num = -6
+    elif movement == "w":
+        num = -5
+    elif movement == "e":
+        num = -4
+    elif movement == "a":
+        num = -1
+    elif movement == "d":
+        num = 1
+    elif movement == "z":
+        num = 4
+    elif movement == "x":
+        num = 5
+    elif movement == "c":
+        num = 6
+    else:
+        num = -1
+    return movement, num
+
+
+# check who's in turn
+def check_turn(f: bool):
+    if f:
+        return f
+    else:
+        print("It's not your turn.")
+        return
+
+
+# for creating path graph
+def check_odd(num):
+    return num % 2 == 0
+
+
+# for creating path graph
+def check_boarder(x: int, y: int, dire: int):
+    if dire == -6:
+        x, y = x - 1, y - 1
+    elif dire == -5:
+        x, y = x, y - 1
+    elif dire == -4:
+        x, y = x + 1, y - 1
+    elif dire == -1:
+        x, y = x - 1, y
+    elif dire == 1:
+        x, y = x + 1, y
+    elif dire == 4:
+        x, y = x - 1, y + 1
+    elif dire == 5:
+        x, y = x, y + 1
+    elif dire == 6:
+        x, y = x + 1, y + 1
+    else:
+        return False
+    return (0 <= x <= 4) & (2 <= y <= 6)
+
+
+# creat path graph
+def creat_path_graph(board: ChessBoard):
+    path = {
+        2: [-1, -1, -1, -1, -1, 6, 7, 8],
+        6: [-1, -1, 2, -1, 7, -1, -1, 12],
+        7: [-1, 2, -1, 6, 8, -1, 12, -1],
+        8: [2, -1, -1, 7, -1, 12, -1, -1],
+    }
+    # for point in range(10, 35):
+    for point in range(10, 35):
+        path[point] = []
+        # use odd and even number
+        # to distinguish 'directions' list
+        # which contents legal numbers representing the specific direction
+        if check_odd(point):
+            directions = [-6, -5, -4, -1, 1, 4, 5, 6]
+        else:
+            directions = [-5, -1, 1, 5]
+        # check point's all legal directions
+        for direction in directions:
+            target = point + direction
+            # make sure no KeyError in board.board[target]
+            if 10 <= target <= 34:
+                # check if out of boarder
+                if check_boarder(board.board[point].x, board.board[point].y, direction):
+                    path[point].append(target)
+                else:
+                    path[point].append(-1)
+            else:
+                path[point].append(-1)
+    # set upper area
+    path[12] = [6, 7, 8, 11, 13, 16, 17, 18]
+    # for key in path.keys():
+    #     print(key, ": ", path[key])
+    return path
+
+
+# Preparations
+chess_board = ChessBoard()  # create new chess board
+chess_board.set_chess_board()  # set chess to new-game-position
+chess_board.set_path()  # set path --- creat path graph
+chess_board.show_chess_board()  # show chess board
+user_input = []  # init user_input
+flag = True  # mark who's turn [True for dog, False for tiger]
+
+# auto test normal
+# auto_chess = [(10, 16), (22, 28),
+#               (16, 22), (28, 32),
+#               (22, 27), (32, 26),
+#               (12, 7), (26, 25),
+#               (7, 2), (25, 20),
+#               (2, 6)]
+
+# auto test -- dogs win
+auto_chess = [(31, 26), (22, 27),
+              (32, 28), (27, 32),
+              (28, 27), (32, 31),
+              (27, 32)]
+
+# Game begin!
+# auto test：
+# for item in auto_chess:
+#     user_input.append([item[0], item[1]])
+#     # also can use (x, y) to operate the chess --- to be added in the next version
+#     if user_input[-1][0] == 111 or user_input[-1][1] == 111:
+#         break
+#     else:
+#         # update chessboard
+#
+#         # check flag
+#         # if (chess_board.board[user_input[0]].chess - flag == 2 or 0
+#         # 2 for tiger 0 for dogs
+#         # 2-1 == 1-0 == 1 turn's error
+#         if chess_board.board[user_input[-1][0]].chess - flag != 1:
+#             if chess_board.swap(user_input[-1][0], user_input[-1][1]):
+#                 chess_board.eat(user_input[-1][1], flag)
+#                 chess_board.win(flag)
+#                 flag = bool(1 - flag)
+#                 chess_board.save()
+#         else:
+#             print("Turn's error.")
+
+# Game begin!
+# user input test：
+while True:
+    user_input.append([int(input("Please choose point: ")), int(input("You want to move it to: "))])
+    if user_input[-1][0] == 111 or user_input[-1][1] == 111:
+        break
+    else:
+        # check flag
+        # if (chess_board.board[user_input[0]].chess - flag == 2 or 0
+        # 2 for tiger 0 for dogs
+        # 2-1 == 1-0 == 1 turn's error
+        if chess_board.board[user_input[-1][0]].chess - flag != 1:
+            if chess_board.swap(user_input[-1][0], user_input[-1][1]):
+                chess_board.eat(user_input[-1][1], flag)
+                chess_board.win(flag)
+                flag = bool(1 - flag)
+                chess_board.save()
+        else:
+            print("Turn's error.")
